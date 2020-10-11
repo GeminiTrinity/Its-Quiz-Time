@@ -12,30 +12,54 @@
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-2">
-                <p>High Scores!</p>
-            </div>
-            <div class="col-8"></div>
-            <div class="col-2">
-                <p>Timer:</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <h1>It's Quiz Time!</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <h4>You will receive -number- of questions related to Javascript coding!
-                The faster you answer, the more points you'll have! 
-                However, if you get any wrong, it'll reduce your total time!</h4>
+        <div id="questions" class="hide">
+            <div class="card w-100">
+                <div class="card-body">
+                    <h5><div id="question">Question</div></h5>
+                    <div id="answer" class="answer-choices">
+                        <button class="btn">Answer 1</button>
+                        <button class="btn">Answer 2</button>
+                        <button class="btn">Answer 3</button>
+                        <button class="btn">Answer 4</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+        <div class="controls"></div>
+        
+    <div class="container">
+        <div id="start">
+            <div class="row">
+                <div class="col-2">
+                    <p>High Scores!</p>
+                </div>
+                <div class="col-8"></div>
+                <div class="col-2">
+                    <p>Timer:</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <h1>It's Quiz Time!</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <h4>You will receive -number- questions related to Javascript coding!
+                    The faster you answer, the more points you'll have! 
+                    However, if you get any wrong, it'll reduce your total time!</h4>
+                </div>
+            </div>
+            <div class="row">
+                <button id="start" class="start-button">Start</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

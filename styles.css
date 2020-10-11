@@ -1,15 +1,55 @@
+/* Got button align info from: https://www.w3schools.com/css/css3_buttons.asp */
+.start-button {
+    font-size: 28px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+/* .start-button:hover {
+    box-shadow: 5px 5px 20px px rgba(0,0,0,0.24)
+} */
+
+body {
+    margin: 50px;
+}
+
+h5 {
+    text-align: center;
+}
+
+.answer-choices {
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
 p {
     font-weight: bold;
     font-size: 14px;
 }
+
 h1 {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 70px;
 }
+
 h4 {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 70px;
 }
+
 .container {
     width: 100%;
     height: 100%;
