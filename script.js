@@ -6,6 +6,9 @@ var answers = document.getElementById("answers");
 var timer = document.getElementById("timer");
 var gameOverMenu = document.getElementById("game-over-menu");
 var score = document.getElementById("score");
+var initialBox = document.getElementById("initials");
+var allScores = document.getElementById("all-scores");
+var submitButton = document.getElementById("submit")
 
 var questionList = 0;
 var time = 60;
@@ -90,38 +93,56 @@ function gameOver() {
   score.textContent = time + "!"
 }
 
+submitButton.addEventListener = ("click", saveScore)
+
+// Additional assistance for saving highscore: https://rb.gy/rnezcz
+
+function saveScore() {
+  var initials = initialBox.value();
+
+  allScores = JSON.parse(localStorage.getItem("all-scores")) || [];
+  var newScore = {
+    score: time,
+    initials: initials.value
+  }
+  allScores.push(newScore);
+  window.localStorage.setItem("all-scores", JSON.stringify(allScores));
+  
+  window.location.href = "highscores.html";
+}
+
 // list of all questions, choices, and answers
 var questions = [
     {
       question: "Commonly used data types DO NOT include:",
-      choices: ["strings", "booleans", "alerts", "numbers"],
-      answer: "alerts"
+      choices: ["Strings", "Booleans", "Alerts", "Numbers"],
+      answer: "Alerts"
     },
     {
       question: "The condition in an if / else statement is enclosed within ____.",
-      choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-      answer: "parentheses"
+      choices: ["Quotes", "Curly Brackets", "Parentheses", "Square Brackets"],
+      answer: "Parentheses"
     },
     {
       question: "Arrays in JavaScript can be used to store ____.",
       choices: [
-        "numbers and strings",
-        "other arrays",
-        "booleans",
-        "all of the above"
+        "Numbers and Strings",
+        "Other Arrays",
+        "Booleans",
+        "All Of The Above"
       ],
-      answer: "all of the above"
+      answer: "All Of The Above"
     },
     {
       question:
         "String values must be enclosed within ____ when being assigned to variables.",
-        choices: ["commas", "curly brackets", "quotes", "parentheses"],
-      answer: "quotes"
+        choices: ["Commas", "Curly Brackets", "Quotes", "Parentheses"],
+      answer: "Quotes"
     },
     {
       question:
         "A very useful tool used during development and debugging for printing content to the debugger is:",
-        choices: ["JavaScript", "terminal / bash", "for loops", "console.log"],
+        choices: ["JavaScript", "Terminal / Bash", "for Loops", "console.log"],
       answer: "console.log"
     }
   ];

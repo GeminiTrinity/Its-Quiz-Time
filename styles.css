@@ -1,5 +1,21 @@
 /* Got button align info from: https://www.w3schools.com/css/css3_buttons.asp */
 .start-button {
+    font-size: 50px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 12px;
+}
+
+.submit-button {
     font-size: 28px;
     margin: 0;
     position: absolute;
@@ -11,11 +27,23 @@
     color: white;
     padding: 10px;
     text-align: center;
-    
-}
+    margin-top: 100px;
+    border-radius: 12px;
+}   
 
 body {
     margin: 50px;
+}
+
+button  {
+    display: grid;
+    font-size: 20px;
+    margin: 0;
+    background-color: black;
+    color: white;
+    margin: 10px;   
+    text-align: center;
+    border-radius: 20px;
 }
 
 .answers {
@@ -23,7 +51,8 @@ body {
     margin: 10px;
     padding: 10px;
     border-radius: 15px;
-    background-color: white;
+    background-color:white;
+    border-radius: 8px;
 }
 
 
@@ -41,13 +70,13 @@ h1 {
     margin-top: 70px;
 }
 
-h3 {
+/* h3 {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
-}
+} */
 
-h4 {
+h3 {
     text-align: center;
     margin-top: 70px;
 }
