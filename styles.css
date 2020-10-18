@@ -29,7 +29,13 @@
     text-align: center;
     margin-top: 100px;
     border-radius: 12px;
+    text-decoration: none;
 }   
+
+a {
+    color: white;
+    text-decoration: none;
+}
 
 body {
     margin: 50px;
@@ -63,6 +69,7 @@ button  {
 p {
     font-weight: bold;
     font-size: 14px;
+    color: black;
 }
 
 h1 {

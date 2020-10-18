@@ -107,8 +107,6 @@ function saveScore() {
   }
   allScores.push(newScore);
   window.localStorage.setItem("all-scores", JSON.stringify(allScores));
-  
-  window.location.href = "highscores.html";
 }
 
 // list of all questions, choices, and answers
