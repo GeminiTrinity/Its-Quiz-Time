@@ -1,34 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>It's Quiz Time!</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>It's Quiz Time!</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css" />
-
-</head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
 <body>
-    <div class="container">
-        <div id="questions" class="hide">
-            <div class="card w-100">
-                <div class="card-body">
-                    <h5><div id="question">Question</div></h5>
-                    <div id="answer" class="answer-choices">
-                        <button class="btn">Answer 1</button>
-                        <button class="btn">Answer 2</button>
-                        <button class="btn">Answer 3</button>
-                        <button class="btn">Answer 4</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="controls"></div>
-        
-    <div class="container">
+  <div class="container">
         <!-- High Scores link and Timer -->
             <div class="row">
                 <div class="col-2">
@@ -36,7 +18,7 @@
                 </div>
                 <div class="col-8"></div>
                 <div class="col-2">
-                    <p>Timer:</p>
+                    <p class="timer">Timer: <span id="timer"></span></span></p>
                 </div>
             </div>
             <!-- Start Menu - instructions and start button -->
@@ -50,7 +32,7 @@
                 <div class="row">
                     <div class="col-2"></div>
                     <div class="col-8">
-                        <h4>You will receive -number- questions related to Javascript coding!
+                        <h4>You will receive five questions related to Javascript coding!
                         The faster you answer, the more points you'll have! 
                         However, if you get any wrong, it'll reduce your total time!</h4>
                     </div>
@@ -61,8 +43,37 @@
             </div>
         </div>
     </div>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div class="card w-100">
+                <div class="card-body">
+                    <h3 id="question"></h3>
+                    <div id="answers" class="answers">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="game-over-menu" class="hide">
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h1>Game Over!</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h4>Great job on completing the quiz! Your final score is <div id="score"></div></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h5>Please entire your initials: <input type="text" id="initials" /></h5>
+        </div>
 
-<!-- Thanks to https://www.youtube.com/watch?v=riDzcEQbX6k&ab_channel=WebDevSimplified for a lot of the assistance on understanding what to do -->
+<!-- Thanks to https://rb.gy/singli for a lot of the assistance on understanding what to do -->
     <script src="script.js"></script>
 </body>
 

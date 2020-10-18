@@ -11,25 +11,21 @@
     color: white;
     padding: 10px;
     text-align: center;
-    border-radius: 15px;
+    
 }
-/* .start-button:hover {
-    box-shadow: 5px 5px 20px px rgba(0,0,0,0.24)
-} */
 
 body {
     margin: 50px;
 }
 
-h5 {
-    text-align: center;
-}
-
-.answer-choices {
+.answers {
     display: grid;
     margin: 10px;
     padding: 10px;
+    border-radius: 15px;
+    background-color: white;
 }
+
 
 .hide {
     display: none;
@@ -45,9 +41,20 @@ h1 {
     margin-top: 70px;
 }
 
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
 h4 {
     text-align: center;
     margin-top: 70px;
+}
+
+h5 {
+    text-align: center;
+    padding: 15px;
 }
 
 .container {
