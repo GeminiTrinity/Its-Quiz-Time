@@ -6,3 +6,5 @@ Technologies used: HTML, CSS, JS
 
 Repo: https://github.com/GeminiTrinity/Its-Quiz-Time
 Website: https://geminitrinity.github.io/Its-Quiz-Time/
+
+ 
