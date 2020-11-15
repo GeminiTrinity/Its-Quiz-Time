@@ -7,4 +7,11 @@ Technologies used: HTML, CSS, JS
 Repo: https://github.com/GeminiTrinity/Its-Quiz-Time
 Website: https://geminitrinity.github.io/Its-Quiz-Time/
 
+Contact the developer:
+Jacob Krueger
+603-923-3614
+jmk4u14@gmail.com
+
+This project is licensed under the terms of the MIT license.
+
 ![image](https://user-images.githubusercontent.com/70424037/99162966-ab5dbe80-26d1-11eb-852f-4c8515b07386.png)
